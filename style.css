@@ -1,0 +1,223 @@
+.left{
+    
+    background: rgb(20, 20,20);
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.right{
+    
+    background: url(./Filme/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100vh;
+    
+}
+
+#pantallas-div{
+    display: flex;
+}
+
+.Tansparencia{
+    font-size: 23px;
+    font-family: 'Roboto Slab', serif;
+    
+    color: white;
+    margin: 0 auto;
+
+    
+}
+
+.Pie_pagina{
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    width: 100%;
+    background-color: #d64810;   
+}
+.Pie_pagina .grup1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    /* el display: grid -> es que hace que se subdivide el template o bien se despriegre en 3*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+
+.Pie_pagina .grup1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Pie_pagina .grup1 .box figure img{
+    width: 250px;
+}
+
+.Pie_pagina .grup1 .box h2{
+    color: black;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.Pie_pagina .grup1 .box p{
+    color: black;
+    margin-bottom: 10px;
+}
+
+.Pie_pagina .grup1 .red-social a{
+    display: inline-block;
+    /* el text-decoration: none  ->  es la parte de eliminar la parte de abajo de exceso del los logos de boostrap*/
+    text-decoration: none;
+    line-height: 45px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.Pie_pagina .grup2{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 5px 5px;
+    text-align: center;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    /*background-color: lightblue;*/
+    background-color:#d64810;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    padding: 5px 20%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: max-content;
+    margin: 0;
+}
+
+.header .log{
+    cursor: pointer;
+}
+
+.header .log img{
+    height: 60px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .log img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-link{
+    list-style: none;
+    width: max-content;
+}
+
+.header .nav-link li{
+    display: inline-block;
+    padding: 0 30px;
+}
+.header .nav-link li:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-link a{
+    font-size: 700;
+    /*color: royalblue;*/
+    color:black;
+    text-decoration: none;
+}
+
+.header .nav-link li a:hover{
+    /*color:blueviolet;*/
+    color: rgb(238, 238, 238);
+}
+
+.AboutMe{
+    background: rgb(20, 20,20);
+    width: 100%;
+    height: 100vh;
+    /*  RECOMENZACION AL MOMENTO DE REALIZAR UN CENTRADO YO LO REALICE PORQUE SOLO TENIA 2 UN PADRE Y  UN HIJO
+        YA QUE SOLO VI QUE SOLO SE PODIA REALIZAR CO SOLO 2 HAY QUE PONER EN PRACTICA CON MAS DIV HJOS*/
+    display: flex;
+    align-items: center;
+}
+
+.AboutMe-text{
+    width: 400px;
+    height: 400px;
+    /* CON ESTE MARGIN SE CENTRA ORIZONTAL MENTE YA CON EL ALIGN-ITENS CENTER ES VERTICALMENTE 
+       RECOMENDACION EN ESTA PARTE COLO CAR PRIMERO EL MARGIN Y DEPSUES EL ITEMS*/
+    margin: 0 auto;
+    
+}
+
+.AboutMe h1{
+    color: white;
+}
+
+.AboutMe p{
+    color: white;
+}
+
+.right_hobi{
+    /*background: white;*/
+    background: rgb(20, 20,20);
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+.left_hobi{
+    /*background: url(./Filme/walling-e_MdMMKrgdY-unsplash.jpg);*/
+    background: url(./filme/connor-coyne-OgqWLzWRSaI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100vh;
+    
+}
+
+#hobi{
+    display: flex;
+    
+}
+
+.Tansparencia{
+    font-size: 23px;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:800px){
+    .Tansparencia{
+        font-size: 15px;
+        
+    }
+
+    .Pie_pagina .grup1{
+        width: 80%;
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+    
+}
